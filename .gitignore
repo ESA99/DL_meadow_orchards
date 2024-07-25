@@ -5,3 +5,4 @@
 
 pred_unet_2024-07-23.rds
 *.tif
+!1.tif

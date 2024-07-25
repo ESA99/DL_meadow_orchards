@@ -7,16 +7,19 @@ As ecologists using remote sensing, most methods are based on spectral propertie
 ## Methods
 Performed in R using reticulate, keras3 and tensorflow.
 
-Data input: DOP 2023 and DLM of North Rhine-Westphalia (Germany) as well as the vgg16 pretrained model.
+Data input: DOP 2023 and DLM of North Rhine-Westphalia (Germany) as well as the vgg16 pretrained U-Net model.
+
+11 AOI´s including a traditional orchard. Create a mask for every AOI indicating T/F.
 
 Data augmentation: 
-  - subsetting the image into tiles of the size 128x128
+  - subsetting the image into tiles of the size 448x448
   - Flipping and mirroring the images to raise the number of training data
 
 Train the model:
-  - creating a new model and training it with true and false data (images)
-  - combining that model with a pre trained model (vgg16), using the first 15 layer for edge and structure detection
+  - pre trained model (vgg16), using the first 15 layer for edge and structure detection
 
 
 ## Results
-For now the model prdicts everything as 0, meaning no meadow orchard. This is due to a disbalnace of training data (72.000 F to 71 T)
+
+Model gives a prediction per tile (448x448 subset) that can be reassambled to a map displaying the probability for the presence of a traditional orchard.
+Workflow is operating as hoped, the output however does not show reliable results as no spatial patterns can be recognised.

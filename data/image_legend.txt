@@ -1,0 +1,12 @@
+"InputImage" "StartIndex" "EndIndex"
+"1" "img1.1.tif" 1 20
+"2" "img2.1.tif" 21 90
+"3" "img2.2.tif" 91 125
+"4" "img3.1.tif" 126 229
+"5" "img4.1.tif" 230 334
+"6" "img5.1.tif" 335 487
+"7" "img5.2.tif" 488 737
+"8" "img6.1.tif" 738 757
+"9" "img6.2.tif" 758 781
+"10" "img6.3.tif" 782 823
+"11" "img6.4.tif" 824 839

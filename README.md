@@ -23,3 +23,5 @@ Train the model:
 
 Model gives a prediction per tile (448x448 subset) that can be reassambled to a map displaying the probability for the presence of a traditional orchard.
 Workflow is operating as hoped, the output however does not show reliable results as no spatial patterns can be recognised.
+
+![Prediction Tile 3](results/plots/prediction_map_3.png)
